@@ -1,1 +1,25 @@
-<h1>The English Academy</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script>
+
+        const url = 'https://docs.google.com/spreadsheets/d/1wv4N5uEzqT_9peC5e7Kt4b0t39_TTcYLIiwEy8gRY70/pub?gid=0&single=true&output=csv';
+
+        $.ajax({
+            url: url,
+            dataType: 'text',
+        }).done(function (data) {
+            console.log("DATA: ", data);
+            debugger;
+        });
+    </script>
+</body>
+
+</html>
