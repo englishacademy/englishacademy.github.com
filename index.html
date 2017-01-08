@@ -12,13 +12,16 @@
 
         const url = 'https://docs.google.com/spreadsheets/d/1wv4N5uEzqT_9peC5e7Kt4b0t39_TTcYLIiwEy8gRY70/pub?gid=0&single=true&output=csv';
 
-        $.ajax({
-            url: url,
-            dataType: 'text',
-        }).done(function (data) {
-            console.log("DATA: ", data);
-            debugger;
+        $(document).ready(function () {
+            $.ajax({
+                url: url,
+                dataType: 'text',
+            }).done(function (data) {
+                console.log("DATA: ", data);
+                debugger;
+            });
         });
+
     </script>
 </body>
 
